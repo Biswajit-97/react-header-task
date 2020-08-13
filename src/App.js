@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header/Header'
 import SideDrawer from './SideDrawer/SideDrawer';
 import Backdrop from './Backdrop/Backdrop';
+import Productcard from './Productitemcards/Productcard';
 
 class App extends Component {
   state = {
@@ -30,6 +31,9 @@ class App extends Component {
       <Header drawerClickHandler={this.drawerToggleClickHandler} />
       <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
+
+      <Productcard />
+      
     </div>
   );
 }
